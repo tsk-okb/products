@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO & OPG Settings -->
+  <title>スプレッドシート顧客管理GAS | 自作ツール詳細</title>
+  <meta name="description" content="Googleスプレッドシートに入力された顧客情報を自動で整理・検索・一括メール送信できるAuto-GASツールの機能詳細・使い方・購入先リンク一覧ページです。">
+  <meta name="keywords" content="GAS, スプレッドシート, 顧客管理, 自動化, ココナラ, ランサーズ, note, X, タイムチケット">
+  <meta property="og:title" content="スプレッドシート顧客管理GAS | 自作ツール詳細">
+  <meta property="og:description" content="スプレッドシート顧客管理GASツールの機能概要と各種プラットフォームでの購入・入手先リンクです。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://your-username.github.io/your-repository/tools/tool-01.html">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/2563eb/ffffff?text=Spreadsheet+CRM+GAS">
+
+  <style>
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+
+      /* Service Specific Brand Colors */
+      --coconala: #2bbb89;
+      --lancers: #1d5ba4;
+      --timeticket: #e76f51;
+      --note: #2cb696;
+      --x-twitter: #0f1419;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Layout */
+    .detail-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 30px;
+    }
+
+    .tool-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .tool-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .tool-tags {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      font-size: 0.8rem;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 28px;
+      border: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+      color: var(--text-main);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    .description-text {
+      color: #334155;
+      font-size: 1rem;
+      white-space: pre-line;
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #334155;
+      margin-bottom: 24px;
+    }
+
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+
+    /* Purchase Links Section */
+    .purchase-section {
+      background: #f1f5f9;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 32px;
+    }
+
+    .purchase-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .purchase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .buy-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: opacity 0.2s ease, transform 0.1s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .buy-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* Brand Button Colors */
+    .btn-coconala { background-color: var(--coconala); }
+    .btn-lancers { background-color: var(--lancers); }
+    .btn-timeticket { background-color: var(--timeticket); }
+    .btn-note { background-color: var(--note); }
+    .btn-x { background-color: var(--x-twitter); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .detail-card { padding: 20px; }
+      .tool-title { font-size: 1.4rem; }
+      .purchase-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav class="container">
+    <a href="../index.html" class="back-link">← ツール一覧に戻る</a>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <article class="detail-card">
+      
+      <!-- ヘッダー情報 -->
+      <header class="tool-header">
+        <div class="tool-tags">
+          <span class="tag">GAS</span>
+          <span class="tag">スプレッドシート</span>
+          <span class="tag">業務効率化</span>
+        </div>
+        <h1 class="tool-title">スプレッドシート顧客管理GASスクリプト</h1>
+      </header>
+
+      <!-- サムネイル画像 -->
+      <img src="https://via.placeholder.com/800x400/2563eb/ffffff?text=Spreadsheet+CRM+GAS+Detail" alt="スプレッドシート顧客管理GAS" class="hero-img" width="800" height="400">
+
+      <!-- ツール概要 -->
+      <h2 class="section-title">ツール概要</h2>
+      <p class="description-text">
+        Googleスプレッドシートと連携し、顧客情報・購入履歴・やり取りの進捗状況をスマートに一元管理できるGAS（Google Apps Script）ツールです。
+
+        データベース作成や面倒な初期設定は不要。お手持ちのGoogleアカウントですぐに使い始めることができます。顧客検索や、テンプレートを使ったメールの一括送信機能も備わっています。
+      </p>
+
+      <!-- 主な機能 -->
+      <h2 class="section-title">主な機能</h2>
+      <ul class="feature-list">
+        <li><strong>ワンクリック自動整形：</strong> 入力されたフォームデータやCSVを綺麗に正規化して保存。</li>
+        <li><strong>テンプレートメール一括送信：</strong> スプレッドシート内の対象者へ差込メール送信。</li>
+        <li><strong>ステータス管理・フィルター：</strong> 「未対応」「対応中」「完了」などの状態を可視化。</li>
+        <li><strong>完全買切型：</strong> 月額費用0円。自身のGoogleドライブ上で完結するためセキュリティも安心。</li>
+      </ul>
+
+      <!-- 購入・お問合せ先ボタン -->
+      <section class="purchase-section">
+        <h2 class="purchase-title">このツールの購入・入手・ご相談窓口</h2>
+        <div class="purchase-grid">
+          
+          <!-- ココナラ -->
+          <a href="https://coconala.com/services/YOUR_SERVICE_ID" target="_blank" rel="noopener noreferrer" class="buy-btn btn-coconala">
+            ココナラで購入
+          </a>
+
+          <!-- ランサーズ -->
+          <a href="https://www.lancers.jp/menu/detail/YOUR_MENU_ID" target="_blank" rel="noopener noreferrer" class="buy-btn btn-lancers">
+            ランサーズで購入
+          </a>
+
+          <!-- タイムチケット -->
+          <a href="https://www.timeticket.jp/items/YOUR_ITEM_ID" target="_blank" rel="noopener noreferrer" class="buy-btn btn-timeticket">
+            タイムチケットで購入
+          </a>
+
+          <!-- note -->
+          <a href="https://note.com/YOUR_NOTE_ID/n/YOUR_ARTICLE_ID" target="_blank" rel="noopener noreferrer" class="buy-btn btn-note">
+            note記事から購入
+          </a>
+
+          <!-- X (旧Twitter) -->
+          <a href="https://x.com/YOUR_X_HANDLE" target="_blank" rel="noopener noreferrer" class="buy-btn btn-x">
+            X (DMで相談・購入)
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Developer Portfolio. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
