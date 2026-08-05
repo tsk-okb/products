@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO & OPG Settings -->
+  <title>自作ツール・Webアプリ一覧 | 開発者ポートフォリオ</title>
+  <meta name="description" content="個人開発した便利ツールやWebアプリケーションの公式一覧・紹介ページです。機能概要、使い方、ライセンス情報を公開中。">
+  <meta name="keywords" content="自作ツール, Webアプリ, 開発者ポートフォリオ, 業務効率化ツール, GAS, WebAPI">
+  <meta property="og:title" content="自作ツール・Webアプリ一覧">
+  <meta property="og:description" content="個人開発した便利ツールやWebアプリケーションの公式一覧ページです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-username.github.io/your-repository/">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/2563eb/ffffff?text=Developer+Tools">
+  
+  <style>
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --badge-free-bg: #dcfce7;
+      --badge-free-text: #166534;
+      --badge-pro-bg: #fef3c7;
+      --badge-pro-text: #92400e;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Hero Section */
+    header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: #ffffff;
+      padding: 60px 0 50px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Product Grid Layout */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    /* Product Card */
+    .product-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background-color: #f1f5f9;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-free {
+      background-color: var(--badge-free-bg);
+      color: var(--badge-free-text);
+    }
+
+    .badge-pro {
+      background-color: var(--badge-pro-bg);
+      color: var(--badge-pro-text);
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+      flex: 2;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      flex: 1;
+    }
+
+    .btn-outline:hover {
+      background-color: #f1f5f9;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.75rem; }
+      header p { font-size: 1rem; }
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヒーローセクション -->
+  <header>
+    <div class="container">
+      <h1>自作ツール・開発プロダクト一覧</h1>
+      <p>業務効率化ツール、Webアプリケーション、GASスクリプトなどの自作プロダクトを集約・公開しています。</p>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ（商品・ツール一覧） -->
+  <main class="container">
+    <div class="product-grid">
+
+      <!-- 商品・ツール 1 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x360/2563eb/ffffff?text=Tool+01+Screenshot" alt="スプレッドシート顧客管理GASスクリプト" class="card-thumb" width="600" height="360" loading="lazy">
+        <div class="card-body">
+          <div class="card-header">
+            <h2 class="card-title">スプレッドシート顧客管理GAS</h2>
+            <span class="badge badge-free">FREE</span>
+          </div>
+          <p class="card-description">
+            Googleスプレッドシートに入力された顧客情報を、自動で整理・検索・一括メール送信できるAuto-GASツールです。導入設定もわずか3分で完了します。
+          </p>
+          <div class="card-tags">
+            <span class="tag">GAS</span>
+            <span class="tag">スプレッドシート</span>
+            <span class="tag">自動化</span>
+          </div>
+          <div class="card-actions">
+            <a href="./tools/tool-01.html" class="btn btn-primary">詳細を見る・試す</a>
+            <a href="https://github.com/your-username/tool-01-repo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 商品・ツール 2 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x360/0f172a/ffffff?text=Tool+02+Screenshot" alt="SEOキーワード自動抽出Webアプリ" class="card-thumb" width="600" height="360" loading="lazy">
+        <div class="card-body">
+          <div class="card-header">
+            <h2 class="card-title">SEOキーワード自動抽出アプリ</h2>
+            <span class="badge badge-pro">PRO</span>
+          </div>
+          <p class="card-description">
+            WebページのURLを入力するだけで、検索エンジンで評価されやすい共起語や関連キーワードを爆速で一覧抽出する軽量ブラウザWebツール。
+          </p>
+          <div class="card-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">SEO</span>
+            <span class="tag">WebAPI</span>
+          </div>
+          <div class="card-actions">
+            <a href="./tools/tool-02.html" class="btn btn-primary">詳細を見る・試す</a>
+            <a href="https://github.com/your-username/tool-02-repo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 商品・ツール 3 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x360/059669/ffffff?text=Tool+03+Screenshot" alt="マークダウン表組ジェネレーター" class="card-thumb" width="600" height="360" loading="lazy">
+        <div class="card-body">
+          <div class="card-header">
+            <h2 class="card-title">Markdown表組ジェネレーター</h2>
+            <span class="badge badge-free">FREE</span>
+          </div>
+          <p class="card-description">
+            Excelやスプレッドシートのセル範囲をコピー＆ペーストするだけで、美しいMarkdown形式のテーブルコードに一瞬で相互変換する開発者向けツール。
+          </p>
+          <div class="card-tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Markdown</span>
+            <span class="tag">効率化</span>
+          </div>
+          <div class="card-actions">
+            <a href="./tools/tool-03.html" class="btn btn-primary">詳細を見る・試す</a>
+            <a href="https://github.com/your-username/tool-03-repo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Developer Portfolio. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
