@@ -3,15 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO & OPG Settings -->
-  <title>ゆうなぎラボ</title>
-  <meta name="description" content="個人開発した便利ツールやWebアプリケーションの公式一覧・紹介ページです。機能概要、使い方、ライセンス情報を公開中。">
-  <meta name="keywords" content="自作ツール, Webアプリ, 開発者ポートフォリオ, 業務効率化ツール, GAS, WebAPI">
-  <meta property="og:title" content="ゆうなぎラボ">
-  <meta property="og:description" content="個人開発した便利ツールやWebアプリケーションの公式一覧ページです。">
+  
+  <!-- SEO Settings -->
+  <title>ゆうなぎラボ - 個人開発の業務効率化・自動化ツール一覧</title>
+  <meta name="description" content="予約、フリマ（メルカリ・ラクマ・ヤフオク）、SNS（Instagram・X）、アフィリエイトなどの作業を全自動化する業務効率化ツールを開発・販売中。ココナラ等で実績多数。">
+  <meta name="keywords" content="予約ツール, フリマツール, メルカリ自動化, SNS自動化, アフィリエイトツール, 自動化ツール, 業務効率化, ゆうなぎラボ">
+  <link rel="canonical" href="https://tsk-okb.github.io/products/index.html">
+
+  <!-- OGP & Twitter Cards -->
+  <meta property="og:title" content="ゆうなぎラボ - 個人開発の業務効率化・自動化ツール一覧">
+  <meta property="og:description" content="予約、フリマ、SNS、アフィリエイトなどの作業を全自動化する業務効率化ツールを開発・販売中。ココナラ等で実績多数。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tsk-okb.github.io/products/">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630/2563eb/ffffff?text=Developer+Tools">
+  <meta property="og:url" content="https://tsk-okb.github.io/products/index.html">
+  <meta property="og:image" content="https://tsk-okb.github.io/products/img/ogp_main.png">
+  <meta property="og:site_name" content="ゆうなぎラボ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ゆうなぎラボ - 個人開発の業務効率化・自動化ツール一覧">
+  <meta name="twitter:description" content="予約、フリマ、SNS、アフィリエイトなどの作業を全自動化する業務効率化ツールを開発・販売中。">
+  <meta name="twitter:image" content="https://tsk-okb.github.io/products/img/ogp_main.png">
+
+  <!-- 構造化データ (JSON-LD): 検索エンジンにサイト構造とツール一覧を明確に伝える -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "ゆうなぎラボ 自動化ツール一覧",
+    "description": "予約、フリマ、SNS、アフィリエイト作業を自動化するツール集",
+    "url": "https://tsk-okb.github.io/products/index.html",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "スポーツクラブ_予約ツール",
+        "url": "https://tsk-okb.github.io/products/tool-sportsclub.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Instagram・X_DM送信ツール",
+        "url": "https://tsk-okb.github.io/products/tool-sns-dm.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Instagram・X_いいねツール",
+        "url": "https://tsk-okb.github.io/products/tool-sns-good.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Instagram・X_フォローツール",
+        "url": "https://tsk-okb.github.io/products/tool-sns-follow.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "フリマ_値下げツール",
+        "url": "https://tsk-okb.github.io/products/tool-fleamarket-price-edit.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "フリマ_コメントツール",
+        "url": "https://tsk-okb.github.io/products/tool-fleamarket-comment.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "フリマ_再出品ツール",
+        "url": "https://tsk-okb.github.io/products/tool-fleamarket-reputup.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "フリマ間_コピー出品ツール",
+        "url": "https://tsk-okb.github.io/products/tool-fleamarket-copy.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "フリマ間_在庫同期ツール",
+        "url": "https://tsk-okb.github.io/products/tool-fleamarket-sync.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Amazon_Xアフィリエイトツール",
+        "url": "https://tsk-okb.github.io/products/tool-affiliate-amazon1.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "楽天市場_Xアフィリエイトツール",
+        "url": "https://tsk-okb.github.io/products/tool-affiliate-rakuten1.html"
+      }
+    ]
+  }
+  </script>
   
   <style>
     /* Reset & Base Styles */
@@ -29,10 +118,6 @@
       --text-main: #0f172a;
       --text-muted: #64748b;
       --border-color: #e2e8f0;
-      --badge-free-bg: #dcfce7;
-      --badge-free-text: #166534;
-      --badge-pro-bg: #fef3c7;
-      --badge-pro-text: #92400e;
       --radius: 12px;
       --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
       --shadow-hover: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
@@ -44,6 +129,18 @@
       color: var(--text-main);
       line-height: 1.6;
       padding-bottom: 60px;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
     }
 
     /* Container */
@@ -58,7 +155,7 @@
       background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
       color: #ffffff;
       padding: 60px 0 50px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       text-align: center;
     }
 
@@ -70,10 +167,54 @@
     }
 
     header p {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: #94a3b8;
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 650px;
+      margin: 0 auto 20px;
+    }
+
+    .hero-features {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .hero-badge {
+      font-size: 0.85rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* Category Filter Navigation */
+    .filter-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 8px 18px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background-color: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
     }
 
     /* Product Grid Layout */
@@ -93,6 +234,10 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
+    }
+
+    .product-card.hidden {
+      display: none;
     }
 
     .product-card:hover {
@@ -128,26 +273,6 @@
       color: var(--text-main);
     }
 
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .badge-free {
-      background-color: var(--badge-free-bg);
-      color: var(--badge-free-text);
-    }
-
-    .badge-pro {
-      background-color: var(--badge-pro-bg);
-      color: var(--badge-pro-text);
-    }
-
     .card-description {
       font-size: 0.95rem;
       color: var(--text-muted);
@@ -176,7 +301,10 @@
     }
 
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
       text-align: center;
       padding: 10px 16px;
       font-size: 0.9rem;
@@ -185,27 +313,21 @@
       border-radius: 6px;
       transition: background-color 0.2s ease;
       cursor: pointer;
+      width: 100%;
     }
 
     .btn-primary {
       background-color: var(--primary);
       color: #ffffff;
-      flex: 2;
     }
 
     .btn-primary:hover {
       background-color: var(--primary-hover);
     }
 
-    .btn-outline {
-      background-color: transparent;
-      border: 1px solid var(--border-color);
-      color: var(--text-main);
-      flex: 1;
-    }
-
-    .btn-outline:hover {
-      background-color: #f1f5f9;
+    .btn-primary::after {
+      content: "→";
+      font-size: 0.9rem;
     }
 
     /* Footer */
@@ -229,7 +351,7 @@
 
     @media (max-width: 640px) {
       header h1 { font-size: 1.75rem; }
-      header p { font-size: 1rem; }
+      header p { font-size: 0.95rem; }
       .product-grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -240,20 +362,36 @@
   <header>
     <div class="container">
       <h1>ゆうなぎラボ</h1>
-      <p>予約ツール、フリマツール、SNSツール、アフィリエイトツール<br>など、販売・更新中のツールを公開しています。</p>
+      <p>日常の面倒な単純作業・繰り返し作業を全自動化。<br>ココナラやランサーズ等で1,000件以上の販売実績がある個人開発ツール集です。</p>
+      <div class="hero-features">
+        <span class="hero-badge">✓ ランニングコスト0円設計</span>
+        <span class="hero-badge">✓ Windows10,11対応</span>
+        <span class="hero-badge">✓ 安心のアフターサポート付き</span>
+      </div>
     </div>
   </header>
 
   <!-- メインコンテンツ -->
   <main class="container">
+    <h2 class="visually-hidden">取り扱い自動化ツール一覧</h2>
+
+    <!-- カテゴリフィルター -->
+    <nav class="filter-nav" aria-label="ツールカテゴリ切替">
+      <button class="filter-btn active" data-category="all">すべて表示</button>
+      <button class="filter-btn" data-category="reservation">予約ツール</button>
+      <button class="filter-btn" data-category="sns">SNSツール</button>
+      <button class="filter-btn" data-category="fleamarket">フリマツール</button>
+      <button class="filter-btn" data-category="affiliate">アフィリエイト</button>
+    </nav>
+
     <div class="product-grid">
 
       <!-- 商品：スポーツクラブ_予約ツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="reservation">
         <img src="https://tsk-okb.github.io/products/img/tool_sportsclub.png" alt="スポーツクラブ_予約ツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">スポーツクラブ_予約ツール</h2>
+            <h3 class="card-title">スポーツクラブ_予約ツール</h3>
           </div>
           <p class="card-description">
             スポーツクラブの先着レッスンを自動予約して予約ストレスを解消できるツールです。hacomono製・ATOMS-V製・コナミ・ティップネス・ゴールドジム・3FITなどの予約サイトに対応しています。
@@ -264,17 +402,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-sportsclub.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-sportsclub.html" class="btn btn-primary" aria-label="スポーツクラブ_予約ツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：Instagram・X_DM送信ツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="sns">
         <img src="https://tsk-okb.github.io/products/img/tool_sns.png" alt="Instagram・X_DM送信ツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">Instagram・X_DM送信ツール</h2>
+            <h3 class="card-title">Instagram・X_DM送信ツール</h3>
           </div>
           <p class="card-description">
             Instagram・XのDM送信作業を自動化して営業・宣伝・販促の時間を大幅に削減できるツールです。ランニングコストがかかる有料APIは一切不要です。
@@ -286,17 +424,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-sns-dm.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-sns-dm.html" class="btn btn-primary" aria-label="Instagram・X_DM送信ツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：Instagram・X_いいねツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="sns">
         <img src="https://tsk-okb.github.io/products/img/tool_sns.png" alt="Instagram・X_いいねツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">Instagram・X_いいねツール</h2>
+            <h3 class="card-title">Instagram・X_いいねツール</h3>
           </div>
           <p class="card-description">
             Instagram・Xのいいね作業を自動化して営業・宣伝・販促の時間を大幅に削減できるツールです。ランニングコストがかかる有料APIは一切不要です。
@@ -308,17 +446,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-sns-good.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-sns-good.html" class="btn btn-primary" aria-label="Instagram・X_いいねツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：Instagram・X_フォローツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="sns">
         <img src="https://tsk-okb.github.io/products/img/tool_sns.png" alt="Instagram・X_フォローツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">Instagram・X_フォローツール</h2>
+            <h3 class="card-title">Instagram・X_フォローツール</h3>
           </div>
           <p class="card-description">
             Instagram・Xのフォロー作業を自動化して営業・宣伝・販促の時間を大幅に削減できるツールです。ランニングコストがかかる有料APIは一切不要です。
@@ -330,17 +468,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-sns-follow.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-sns-follow.html" class="btn btn-primary" aria-label="Instagram・X_フォローツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：フリマ_値下げツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="fleamarket">
         <img src="https://tsk-okb.github.io/products/img/tool_fleamarket.png" alt="フリマ_値下げツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">フリマ_値下げツール</h2>
+            <h3 class="card-title">フリマ_値下げツール</h3>
           </div>
           <p class="card-description">
             フリマサイトの値下げ操作を自動化して作業時間を大幅に削減できるツールです。値下げ⇒値上げ（元値に戻す）にも対応しています。
@@ -355,17 +493,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-fleamarket-price-edit.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-fleamarket-price-edit.html" class="btn btn-primary" aria-label="フリマ_値下げツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：フリマ_コメントツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="fleamarket">
         <img src="https://tsk-okb.github.io/products/img/tool_fleamarket.png" alt="フリマ_コメントツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">フリマ_コメントツール</h2>
+            <h3 class="card-title">フリマ_コメントツール</h3>
           </div>
           <p class="card-description">
             フリマサイトのコメント操作を自動化して作業時間を大幅に削減できるツールです。コメントの投稿・削除の両方に対応しています。
@@ -377,17 +515,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-fleamarket-comment.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-fleamarket-comment.html" class="btn btn-primary" aria-label="フリマ_コメントツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：フリマ_再出品ツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="fleamarket">
         <img src="https://tsk-okb.github.io/products/img/tool_fleamarket.png" alt="フリマ_再出品ツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">フリマ_再出品ツール</h2>
+            <h3 class="card-title">フリマ_再出品ツール</h3>
           </div>
           <p class="card-description">
             フリマサイトの再出品操作を自動化して作業時間を大幅に削減できるツールです。新規で再出品⇒元商品の削除まで完全自動化しています。
@@ -401,17 +539,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-fleamarket-reputup.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-fleamarket-reputup.html" class="btn btn-primary" aria-label="フリマ_再出品ツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：フリマ間_コピー出品ツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="fleamarket">
         <img src="https://tsk-okb.github.io/products/img/tool_fleamarket.png" alt="フリマ間_コピー出品ツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">フリマ間_コピー出品ツール</h2>
+            <h3 class="card-title">フリマ間_コピー出品ツール</h3>
           </div>
           <p class="card-description">
             フリマAに出品中の商品をフリマB向けに自動で変換→コピー出品して簡単に販路を拡大できるツールです。複数販路で商品を露出させて売上をアップします。
@@ -426,17 +564,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-fleamarket-copy.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-fleamarket-copy.html" class="btn btn-primary" aria-label="フリマ間_コピー出品ツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：フリマ間_在庫同期ツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="fleamarket">
         <img src="https://tsk-okb.github.io/products/img/tool_fleamarket.png" alt="フリマ間_在庫同期ツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">フリマ間_在庫同期ツール</h2>
+            <h3 class="card-title">フリマ間_在庫同期ツール</h3>
           </div>
           <p class="card-description">
             複数フリマに出品中の商品在庫を自動で同期して在庫管理にかかる時間を大幅に削減できるツールです。評価ダウンに繋がる在庫切れリスクを防止します。
@@ -451,17 +589,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-fleamarket-sync.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-fleamarket-sync.html" class="btn btn-primary" aria-label="フリマ間_在庫同期ツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：Amazon_Xアフィリエイトツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="affiliate">
         <img src="https://tsk-okb.github.io/products/img/tool_affiliate.png" alt="Amazon_Xアフィリエイトツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">Amazon_Xアフィリエイトツール</h2>
+            <h3 class="card-title">Amazon_Xアフィリエイトツール</h3>
           </div>
           <p class="card-description">
             Amazonの在庫復活を自動で検知してXにアフィリエイト投稿するツールです。ランニングコスト0円。常時監視で副収入のチャンスを取りこぼしません。
@@ -473,17 +611,17 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-affiliate-amazon1.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-affiliate-amazon1.html" class="btn btn-primary" aria-label="Amazon_Xアフィリエイトツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
 
       <!-- 商品：楽天市場_Xアフィリエイトツール -->
-      <article class="product-card">
+      <article class="product-card" data-category="affiliate">
         <img src="https://tsk-okb.github.io/products/img/tool_affiliate.png" alt="楽天市場_Xアフィリエイトツール" class="card-thumb" width="600" height="360" loading="lazy">
         <div class="card-body">
           <div class="card-header">
-            <h2 class="card-title">楽天市場_Xアフィリエイトツール</h2>
+            <h3 class="card-title">楽天市場_Xアフィリエイトツール</h3>
           </div>
           <p class="card-description">
             楽天市場の在庫復活を自動で検知してXにアフィリエイト投稿するツールです。ランニングコスト0円。常時監視で副収入のチャンスを取りこぼしません。
@@ -495,7 +633,7 @@
             <span class="tag">Windows</span>
           </div>
           <div class="card-actions">
-            <a href="./tool-affiliate-rakuten1.html" class="btn btn-primary">詳細を見る</a>
+            <a href="./tool-affiliate-rakuten1.html" class="btn btn-primary" aria-label="楽天市場_Xアフィリエイトツールの詳細を見る">詳細を見る</a>
           </div>
         </div>
       </article>
@@ -506,9 +644,35 @@
   <!-- フッター -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 Developer Portfolio. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+      <p>&copy; 2026 ゆうなぎラボ. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
     </div>
   </footer>
 
+  <!-- カテゴリフィルター JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // アクティブボタンの切り替え
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const category = btn.getAttribute('data-category');
+
+          // カードの表示・非表示切り替え
+          productCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
