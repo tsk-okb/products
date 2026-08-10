@@ -145,6 +145,7 @@
 
     .tool-tags {
       display: flex;
+      flex-wrap: wrap; /* 追加：画面幅に合わせてタグを自動折り返し */
       gap: 8px;
       margin-bottom: 16px;
     }
@@ -156,6 +157,7 @@
       padding: 4px 10px;
       border-radius: 4px;
       font-weight: 600;
+      white-space: nowrap; /* 追加：タグ内の単語途中で改行されるのを防ぐ */
     }
 
     .hero-img {
