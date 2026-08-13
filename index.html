@@ -15,22 +15,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Settings -->
-  <title>ゆうなぎラボ - 個人開発の業務効率化・自動化ツール一覧</title>
-  <meta name="description" content="予約、フリマ（メルカリ・ラクマ・ヤフオク）、SNS（Instagram・X）、アフィリエイトなどの作業を全自動化する業務効率化ツールを開発・販売中。ココナラ等で実績多数。">
-  <meta name="keywords" content="予約ツール, フリマツール, メルカリ自動化, SNS自動化, アフィリエイトツール, 自動化ツール, 業務効率化, ゆうなぎラボ">
+  <title>ゆうなぎラボ - 開発プロダクト一覧</title>
+  <meta name="description" content="スポーツクラブ予約、フリマ運用（メルカリ・ラクマ・ヤフオク・ヤフーフリマ）、SNS運用（Instagram・X）、アフィリエイト運用（Amazon・楽天市場）などを自動化するツールを開発・販売中。ココナラ等で実績多数。">
+  <meta name="keywords" content="スポーツクラブ, フリマ, SNS, アフィリエイト, 自動化, 業務効率化, ゆうなぎラボ">
   <link rel="canonical" href="https://www.tsk-lab.net/index.html">
 
   <!-- OGP & Twitter Cards -->
-  <meta property="og:title" content="ゆうなぎラボ - 個人開発の業務効率化・自動化ツール一覧">
-  <meta property="og:description" content="予約、フリマ、SNS、アフィリエイトなどの作業を全自動化する業務効率化ツールを開発・販売中。ココナラ等で実績多数。">
+  <meta property="og:title" content="ゆうなぎラボ - 開発プロダクト一覧">
+  <meta property="og:description" content="スポーツクラブ予約、フリマ運用（メルカリ・ラクマ・ヤフオク・ヤフーフリマ）、SNS運用（Instagram・X）、アフィリエイト運用（Amazon・楽天市場）などを自動化するツールを開発・販売中。ココナラ等で実績多数。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.tsk-lab.net/index.html">
   <meta property="og:image" content="https://www.tsk-lab.net/img/icon.png">
   <meta property="og:site_name" content="ゆうなぎラボ">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ゆうなぎラボ - 個人開発の業務効率化・自動化ツール一覧">
-  <meta name="twitter:description" content="予約、フリマ、SNS、アフィリエイトなどの作業を全自動化する業務効率化ツールを開発・販売中。">
+  <meta name="twitter:title" content="ゆうなぎラボ - 開発プロダクト一覧">
+  <meta name="twitter:description" content="スポーツクラブ予約、フリマ運用（メルカリ・ラクマ・ヤフオク・ヤフーフリマ）、SNS運用（Instagram・X）、アフィリエイト運用（Amazon・楽天市場）などを自動化するツールを開発・販売中。ココナラ等で実績多数。">
   <meta name="twitter:image" content="https://www.tsk-lab.net/img/icon.png">
 
   <!-- 構造化データ (JSON-LD): 検索エンジンにサイト構造とツール一覧を明確に伝える -->
@@ -38,8 +38,8 @@
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "ゆうなぎラボ 自動化ツール一覧",
-    "description": "予約、フリマ、SNS、アフィリエイト作業を自動化するツール集",
+    "name": "ゆうなぎラボ - 開発プロダクト一覧",
+    "description": "スポーツクラブ予約、フリマ運用（メルカリ・ラクマ・ヤフオク・ヤフーフリマ）、SNS運用（Instagram・X）、アフィリエイト運用（Amazon・楽天市場）などを自動化するツールを開発・販売中。ココナラ等で実績多数。",
     "url": "https://www.tsk-lab.net/index.html",
     "itemListElement": [
       {
@@ -340,6 +340,60 @@
       font-size: 0.9rem;
     }
 
+    /* Platform Section Styles */
+    .platform-section {
+      margin-top: 60px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .platform-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .platform-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-main);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .platform-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--primary);
+    }
+
+    .platform-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .platform-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
     /* Footer */
     footer {
       margin-top: 80px;
@@ -363,6 +417,7 @@
       header h1 { font-size: 1.75rem; }
       header p { font-size: 0.95rem; }
       .product-grid { grid-template-columns: 1fr; }
+      .platform-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -372,7 +427,7 @@
   <header>
     <div class="container">
       <h1>ゆうなぎラボ</h1>
-      <p>日常の面倒な単純作業・繰り返し作業を全自動化。<br>ココナラやランサーズ等で1,000件以上の販売実績がある個人開発ツール集です。</p>
+      <p>日常のストレス／ルーティン作業をすっきり自動化して時間的余裕を作ります。<br>ココナラやランサーズ等で1,000件以上の販売実績がある開発プロダクト集です。</p>
       <div class="hero-features">
         <span class="hero-badge">✓ Windows10,11対応</span>
         <span class="hero-badge">✓ ランニングコスト0円設計</span>
@@ -386,7 +441,7 @@
 
   <!-- メインコンテンツ -->
   <main class="container">
-    <h2 class="visually-hidden">取り扱い自動化ツール一覧</h2>
+    <h2 class="visually-hidden">開発プロダクト一覧</h2>
 
     <!-- カテゴリフィルター -->
     <nav class="filter-nav" aria-label="ツールカテゴリ切替">
@@ -407,7 +462,7 @@
             <h3 class="card-title">スポーツクラブ_予約ツール</h3>
           </div>
           <p class="card-description">
-            スポーツクラブの先着レッスンを自動予約して予約ストレスを解消できるツールです。hacomono製・ATOMS-V製・コナミ・ティップネス・ゴールドジム・3FITなどの予約サイトに対応しています。
+            スポーツクラブの人気レッスンを自動予約して予約ストレスを解消できるツールです。hacomono製・ATOMS-V製・コナミ・ティップネス・ゴールドジム・3FITなどの予約サイトに対応しています。
           </p>
           <div class="card-tags">
             <span class="tag">スポーツクラブ</span>
@@ -428,7 +483,7 @@
             <h3 class="card-title">Instagram・X_DM送信ツール</h3>
           </div>
           <p class="card-description">
-            Instagram・XのDM送信作業を自動化して営業・宣伝・販促の時間を大幅に削減できるツールです。ランニングコストがかかる有料APIは一切不要です。
+            Instagram・XのDM送信作業を自動化してDM営業にかかる時間を大幅削減するツールです。ランニングコストがかかる有料APIは一切不要です。
           </p>
           <div class="card-tags">
             <span class="tag">Instagram</span>
@@ -450,7 +505,7 @@
             <h3 class="card-title">Instagram・X_いいねツール</h3>
           </div>
           <p class="card-description">
-            Instagram・Xのいいね作業を自動化して営業・宣伝・販促の時間を大幅に削減できるツールです。ランニングコストがかかる有料APIは一切不要です。
+            Instagram・Xのいいね作業を自動化していいね営業にかかる時間を大幅削減するツールです。ランニングコストがかかる有料APIは一切不要です。
           </p>
           <div class="card-tags">
             <span class="tag">Instagram</span>
@@ -472,7 +527,7 @@
             <h3 class="card-title">Instagram・X_フォローツール</h3>
           </div>
           <p class="card-description">
-            Instagram・Xのフォロー作業を自動化して営業・宣伝・販促の時間を大幅に削減できるツールです。ランニングコストがかかる有料APIは一切不要です。
+            Instagram・Xのフォロー作業を自動化してフォロー営業にかかる時間を大幅削減するツールです。ランニングコストがかかる有料APIは一切不要です。
           </p>
           <div class="card-tags">
             <span class="tag">Instagram</span>
@@ -494,7 +549,7 @@
             <h3 class="card-title">フリマ_値下げツール</h3>
           </div>
           <p class="card-description">
-            フリマサイトの値下げ操作を自動化して作業時間を大幅に削減できるツールです。値下げ→元値に戻す操作にも対応しています。
+            フリマサイトの値下げ操作を自動化して上位表示作業にかかる時間を大幅削減するツールです。物販プレイヤー必須のルーティン作業をすっきり自動化します。
           </p>
           <div class="card-tags">
             <span class="tag">メルカリ</span>
@@ -519,7 +574,7 @@
             <h3 class="card-title">フリマ_コメントツール</h3>
           </div>
           <p class="card-description">
-            フリマサイトのコメント操作を自動化して作業時間を大幅に削減できるツールです。コメントの投稿・削除の両方に対応しています。
+            フリマサイトのコメント操作を自動化して販促作業にかかる時間を大幅削減するツールです。物販プレイヤー必須のルーティン作業をすっきり自動化します。
           </p>
           <div class="card-tags">
             <span class="tag">メルカリ</span>
@@ -541,7 +596,7 @@
             <h3 class="card-title">フリマ_再出品ツール</h3>
           </div>
           <p class="card-description">
-            フリマサイトの再出品操作を自動化して作業時間を大幅に削減できるツールです。新規で再出品→再出品元の商品削除まで完全自動化しています。
+            フリマサイトの再出品操作を自動化して上位表示作業にかかる時間を大幅削減するツールです。物販プレイヤー必須のルーティン作業をすっきり自動化します。
           </p>
           <div class="card-tags">
             <span class="tag">メルカリ</span>
@@ -565,7 +620,7 @@
             <h3 class="card-title">フリマ間_コピー出品ツール</h3>
           </div>
           <p class="card-description">
-            フリマAに出品中の商品をフリマB向けに自動で変換→コピー出品して簡単に販路を拡大できるツールです。複数販路の露出増加で売上をアップします。
+            フリマAに出品中の商品をフリマB向けに自動で変換→コピー出品して販路拡大にかかる時間を大幅削減するツールです。複数販路の露出増加で売上をアップします。
           </p>
           <div class="card-tags">
             <span class="tag">メルカリ</span>
@@ -590,7 +645,7 @@
             <h3 class="card-title">フリマ間_在庫同期ツール</h3>
           </div>
           <p class="card-description">
-            複数フリマに出品中の商品在庫を自動で同期して在庫管理にかかる時間を大幅に削減できるツールです。評価ダウンに繋がる在庫切れリスクを防止します。
+            複数フリマに出品中の商品在庫を自動で同期して在庫管理にかかる時間を大幅削減するツールです。評価ダウンに繋がる在庫切れリスクを防止します。
           </p>
           <div class="card-tags">
             <span class="tag">メルカリ</span>
@@ -615,7 +670,7 @@
             <h3 class="card-title">Amazon_Xアフィリエイトツール</h3>
           </div>
           <p class="card-description">
-            Amazonの在庫復活を自動で検知してXにアフィリエイト投稿するツールです。ランニングコスト0円。常時監視で副収入のチャンスを取りこぼしません。
+            収益化しやすいAmazon商品の在庫復活を自動で検知してXにアフィリエイト投稿するツールです。ランニングコスト0円。常時監視で副収入のチャンスを取りこぼしません。
           </p>
           <div class="card-tags">
             <span class="tag">Amazon</span>
@@ -637,7 +692,7 @@
             <h3 class="card-title">楽天市場_Xアフィリエイトツール</h3>
           </div>
           <p class="card-description">
-            楽天市場の在庫復活を自動で検知してXにアフィリエイト投稿するツールです。ランニングコスト0円。常時監視で副収入のチャンスを取りこぼしません。
+            収益化しやすい楽天商品の在庫復活を自動で検知してXにアフィリエイト投稿するツールです。ランニングコスト0円。常時監視で副収入のチャンスを取りこぼしません。
           </p>
           <div class="card-tags">
             <span class="tag">楽天市場</span>
@@ -652,6 +707,33 @@
       </article>
 
     </div>
+
+    <!-- 外部プラットフォーム リンク集 -->
+    <section class="platform-section">
+      <h2 class="platform-title">公式プラットフォーム</h2>
+      <div class="platform-grid">
+        <a href="https://coconala.com/users/1743879" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <span class="platform-name">ココナラ</span>
+          <span class="platform-sub">coconala</span>
+        </a>
+        <a href="https://www.lancers.jp/profile/spica_001" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <span class="platform-name">ランサーズ</span>
+          <span class="platform-sub">Lancers</span>
+        </a>
+        <a href="https://x.com/p9BdeZbMqkpuinU" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <span class="platform-name">X</span>
+          <span class="platform-sub">旧 Twitter</span>
+        </a>
+        <a href="https://note.com/mairo_0313_0103" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <span class="platform-name">note</span>
+          <span class="platform-sub">ナレッジ・記事発信</span>
+        </a>
+        <a href="https://www.timeticket.jp/hosts/yunagi_engineer/" target="_blank" rel="noopener noreferrer" class="platform-card">
+          <span class="platform-name">タイムチケット</span>
+          <span class="platform-sub">TimeTicket</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <!-- フッター -->
