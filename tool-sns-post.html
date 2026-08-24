@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFTBJ5QV1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SFTBJ5QV1B');
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Instagram・X・Threads・Bluesky_定期投稿ツール | 投稿する曜日・時間帯も指定可能 | ゆうなぎラボ</title>
+  <meta name="description" content="Instagram・X・Threads・Bluesky_定期投稿ツール。投稿する曜日・時間帯も指定可能。営業・集客・宣伝に。">
+  <meta name="keywords" content="Instagram, X, いいね, ゆうなぎラボ">
+  <link rel="canonical" href="https://www.tsk-lab.net/tool-sns-post.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / SNS -->
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="ゆうなぎラボ">
+  <meta property="og:title" content="Instagram・X・Threads・Bluesky_定期投稿ツール | 投稿する曜日・時間帯も指定可能">
+  <meta property="og:description" content="Instagram・X・Threads・Bluesky_定期投稿ツール。投稿する曜日・時間帯も指定可能。各プラットフォーム（ココナラ・ランサーズ・note・X・タイムチケット）から相談・購入・サポート可能。">
+  <meta property="og:url" content="https://www.tsk-lab.net/tool-sns-post.html">
+  <meta property="og:image" content="https://www.tsk-lab.net/img/tool_sns.png">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instagram・X・Threads・Bluesky_定期投稿ツール | ゆうなぎラボ">
+  <meta name="twitter:description" content="Instagram・X・Threads・Bluesky_定期投稿ツール。投稿する曜日・時間帯も指定可能。">
+  <meta name="twitter:image" content="https://www.tsk-lab.net/img/tool_sns.png">
+
+  <!-- Structured Data (JSON-LD) for SEO & Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "SoftwareApplication",
+    "name": "Instagram・X・Threads・Bluesky_定期投稿ツール",
+    "operatingSystem": "Windows 10, Windows 11 (64bit)",
+    "applicationCategory": "BusinessApplication",
+    "description": "Instagram・X・Threads・Bluesky_定期投稿ツール。投稿する曜日・時間帯も指定可能",
+    "url": "https://www.tsk-lab.net/tool-sns-post.html",
+    "image": "https://www.tsk-lab.net/img/tool_sns.png",
+    "author": {
+      "@type": "Organization",
+      "name": "ゆうなぎラボ"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "JPY",
+      "offerCount": "5",
+      "seller": {
+        "@type": "Organization",
+        "name": "ゆうなぎラボ"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+
+      /* Service Specific Brand Colors */
+      --coconala: #2bbb89;
+      --lancers: #1d5ba4;
+      --timeticket: #e76f51;
+      --note: #2cb696;
+      --x-twitter: #0f1419;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff !important;
+      box-shadow: 0 8px 20px rgba(37,99,235,.25);
+      transition: all .25s ease;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .back-link:hover {
+      transform: translateY(-3px);
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(37,99,235,.35);
+    }
+
+    /* Main Content Layout */
+    .detail-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 30px;
+    }
+
+    .tool-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .tool-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .tool-tags {
+      display: flex;
+      flex-wrap: wrap; /* 追加：画面幅に合わせてタグを自動折り返し */
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      font-size: 0.8rem;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-weight: 600;
+      white-space: nowrap; /* 追加：タグ内の単語途中で改行されるのを防ぐ */
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 28px;
+      border: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+      color: var(--text-main);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    .description-text {
+      color: #334155;
+      font-size: 1rem;
+      white-space: pre-line;
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #334155;
+      margin-bottom: 24px;
+    }
+
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+
+    /* Purchase Links Section */
+    .purchase-section {
+      background: #f1f5f9;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 32px;
+    }
+
+    .purchase-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .purchase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .buy-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: opacity 0.2s ease, transform 0.1s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .buy-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* Brand Button Colors */
+    .btn-coconala { background-color: var(--coconala); }
+    .btn-lancers { background-color: var(--lancers); }
+    .btn-timeticket { background-color: var(--timeticket); }
+    .btn-note { background-color: var(--note); }
+    .btn-x { background-color: var(--x-twitter); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .detail-card { padding: 20px; }
+      .tool-title { font-size: 1.4rem; }
+      .purchase-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ナビゲーション -->
+  <nav class="container">
+    <a href="./index.html" class="back-link">TOPページへ戻る</a>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main class="container">
+    <article class="detail-card">
+      
+      <!-- ヘッダー情報 -->
+      <header class="tool-header">
+        <div class="tool-tags">
+          <span class="tag">Instagram</span>
+          <span class="tag">X</span>
+          <span class="tag">Threads</span>
+          <span class="tag">Bluesky</span>
+          <span class="tag">投稿</span>
+          <span class="tag">営業</span>
+          <span class="tag">宣伝</span>
+          <span class="tag">集客</span>
+          <span class="tag">Windows</span>
+          <span class="tag">販売歴7年以上</span>
+        </div>
+        <h1 class="tool-title">Instagram・X・Threads・Bluesky_定期投稿ツール</h1>
+      </header>
+
+      <!-- サムネイル画像 -->
+      <img src="https://www.tsk-lab.net/img/tool_sns.png" alt="Instagram・X・Threads・Bluesky_定期投稿ツール" class="hero-img" width="800" height="400">
+
+      <h2 class="section-title">はじめに</h2>
+      <p class="description-text">
+        Instagram・X・Threads・Blueskyで定期投稿を行っている皆さま、こんな悩みはありませんか？
+
+        ・毎日コツコツとした手作業での投稿で疲弊している。
+        ・気付くと投稿漏れや投稿誤りなどのミスが発生している。
+        ・他業務も兼務していて、投稿作業にかけられる時間が足りない。
+
+        その悩み、当ツールが投稿操作を自動化して、すっきり解消します！
+        運用コストのかかる有料APIは不要です！
+      </p>
+
+      <h2 class="section-title">このツールでできること</h2>
+      <p class="description-text">
+        ・指定の投稿文／画像を定期的に自動で投稿します。
+        ・投稿文・画像はCSVファイルで複数指定可能です。
+        ・投稿順序をCSV記述順orランダムで選択可能です。
+        ・投稿ごとの間隔・ゆらぎを設定可能です。
+        ・投稿する曜日や時間帯を指定可能です。
+        ・有料パートナーシップの付与可否を設定可能です。（*Xのみ）
+        ・複数アカウントの同時運用が可能です。
+
+        当ツールの稼働中は放置OKです！
+      </p>
+
+      <h2 class="section-title">注意事項</h2>
+      <p class="description-text">
+        ・SNS別に1購入が必要です。
+        ・各SNSの制限事項の範囲内で運用してください。
+      </p>
+
+      <h2 class="section-title">動作環境</h2>
+      <p class="description-text">
+        ・OS：Windows10,11（64bit）以上
+        ・CPU：Intel（Core i3）／AMD（Ryzen 3）以上
+        ・メモリ：8GB以上
+        ・PC電源OFF／スリープモード時は動作不可
+        ・MacPCはWindows仮想環境上で動作可能
+        ・SNSアカウント（API不要）
+      </p>
+
+      <h2 class="section-title">サポート体制</h2>
+      <p class="description-text">
+        ・安定稼働するまでしっかり技術サポートします。
+        ・取引完了後も継続して最新版を無償提供します。
+
+        初心者の方も安心して導入できます！
+        アフターサポートもしっかりと継続対応します！
+        販売者＝開発者のため、急なトラブルにも即対応可能です！
+      </p>
+
+      <h2 class="section-title">納品形式</h2>
+      <p class="description-text">
+        ・プログラム一式（.exeなど）
+        ・操作説明書（ReadMe.txt）
+      </p>
+
+      <h2 class="section-title">ライセンス</h2>
+      <p class="description-text">
+        ・二次販売禁止です。
+        ・実行PCのプロダクトID（製造番号）の登録制です。
+        ・プロダクトIDは取引中も取引完了後も無償で追加登録可能です。
+      </p>
+
+      <h2 class="section-title">購入にあたってのお願い</h2>
+      <p class="description-text">
+        ・納品後の返品（キャンセル）は不可です。
+        ・動作環境をご準備の上、ご購入いただけますようお願いいたします。
+        ・本ツール使用により生じた如何なる損害に関して一切責任を負いません。
+      </p>
+
+      <h2 class="section-title">販売価格</h2>
+      <p class="description-text">
+        ・永久ライセンス版：15,000円
+        ・試用版（30日間）：5,000円
+      </p>
+
+      <!-- 購入先 -->
+      <section class="purchase-section">
+        <h2 class="purchase-title">事前相談・購入手続き・アフターサポートの窓口</h2>
+        <div class="purchase-grid">
+          
+          <!-- ココナラ -->
+          <a href="https://coconala.com/services/2496722" onclick="gtag('event', 'click_coconala_sns_post', {'product_name': 'coconala_sns_post'});" target="_blank" rel="noopener noreferrer" class="buy-btn btn-coconala">
+            ココナラ<br>（購入レビュー900件以上！）
+          </a>
+
+          <!-- ランサーズ -->
+          <a href="https://www.lancers.jp/menu/detail/1340132" onclick="gtag('event', 'click_lancers_sns_post', {'product_name': 'lancers_sns_post'});" target="_blank" rel="noopener noreferrer" class="buy-btn btn-lancers">
+            ランサーズ<br>（安心の認定ランク！）
+          </a>
+
+          <!-- note -->
+          <a href="https://note.com/mairo_0313_0103/n/n27f111d19170" onclick="gtag('event', 'click_note_sns_post', {'product_name': 'note_sns_post'});" target="_blank" rel="noopener noreferrer" class="buy-btn btn-note">
+            note<br>（開発者記事も投稿中！）
+          </a>
+
+          <!-- X -->
+          <a href="https://x.com/p9BdeZbMqkpuinU" onclick="gtag('event', 'click_x_sns_post', {'product_name': 'x_sns_post'});" target="_blank" rel="noopener noreferrer" class="buy-btn btn-x">
+            X（固定ポストより）<br>（一律5,000円OFF！）
+          </a>
+
+          <!-- タイムチケット -->
+          <a href="https://www.timeticket.jp/items/194620/" onclick="gtag('event', 'click_timeticket_sns_post', {'product_name': 'timeticket_sns_post'});" target="_blank" rel="noopener noreferrer" class="buy-btn btn-timeticket">
+            タイムチケット<br>（購入レビューあり！）
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Developer Portfolio. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
